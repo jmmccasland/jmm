@@ -20,12 +20,13 @@ How to use the imported fonts:
 font-family: 'Archivo Black', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Londrina Outline', cursive;
 **************************************/
 
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans|Open+Sans+Condensed:300'); // GOOGLE fonts
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Londrina+Outline|Open+Sans|Open+Sans+Condensed:300'); // GOOGLE fonts
 @import 'box-sizing'; // Really great box-sizing styles, thanks OP!
 @import 'resets'; // Default style resets to make elements play nicely with minimal effort
 @import 'layout'; // Styles for site-wide layout (.section, .container, .grid, etc)

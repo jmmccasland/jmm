@@ -1,0 +1,42 @@
+// HERO \\
+.section--hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: $c-primary;
+  color: $c-secondary;
+}
+
+.hero {
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+
+  &__name {
+    font-size: 4rem;
+    font-weight: inherit;
+    letter-spacing: 0.5rem;
+  }
+
+  &__message {
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotate(-45deg);
+    margin: 0;
+    border-left: 0.1rem solid $c-secondary;
+    border-bottom: 0.1rem solid $c-secondary;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: rgba(255, 255, 255, 0.025);
+  }
+}

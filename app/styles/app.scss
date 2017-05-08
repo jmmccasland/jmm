@@ -4,6 +4,7 @@ $c-primary: #000;
 $c-secondary: #fff;
 
 // Gradients
+$g-arrow: linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.25) 2%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0) 35%);
 
 
 // Shadows & Borders
@@ -32,3 +33,8 @@ font-family: 'Londrina Outline', cursive;
 @import 'layout'; // Styles for site-wide layout (.section, .container, .grid, etc)
 @import 'top-nav'; // Styles for site-wide top navigation
 @import 'hero'; // Styles for giant hero section
+
+// WORK \\
+.section--work {
+  padding: 0;
+}

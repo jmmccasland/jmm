@@ -11,13 +11,12 @@
 
 .hero {
   text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase;
   font-weight: 100;
 
   &__name {
-    font-family: 'Londrina Outline', cursive;
-    font-size: 4rem;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3rem;
     font-weight: inherit;
     letter-spacing: 0.5rem;
   }
@@ -39,6 +38,6 @@
     border-bottom: 0.1rem solid $c-secondary;
     width: 2.5rem;
     height: 2.5rem;
-    background: rgba(255, 255, 255, 0.025);
+    background: $g-arrow;
   }
 }

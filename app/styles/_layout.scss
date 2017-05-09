@@ -13,13 +13,12 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  height: calc(100vh - 3rem);
 
   &__item {
     flex-basis: calc(100% / 3);
     flex-grow: 1;
     min-width: 20rem;
-    height: 50%;
+    height: calc(50vh - 2rem);
   }
 }
 

@@ -8,5 +8,5 @@ arrow.addEventListener('click', () => {
   // element.scrollIntoView(false);
   // element.scrollIntoView({ block: 'end' });
   // element.scrollIntoView({ block: 'end', behavior: 'smooth' });
-  window.scrollTo(0, 300);
+  window.scrollTo(0, 10000);
 });

@@ -25,18 +25,39 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     letter-spacing: 0.25rem;
+
+    &__span {
+      font-size: 0.9rem;
+      font-style: italic;
+      text-transform: lowercase;
+    }
   }
 
   &__arrow {
     position: absolute;
     bottom: 2rem;
     left: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
+
     margin: 0;
     transform: translateX(-50%);
+
+  }
+
+  &__arrow__lines {
+    width: 2.5rem;
+    height: 2.5rem;
     transform: rotate(-45deg);
     border-bottom: 0.1rem solid $c-secondary;
     border-left: 0.1rem solid $c-secondary;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero__name {
+    font-size: 1.5rem;
+  }
+
+  .hero__message {
+    font-size: 0.75rem;
   }
 }

@@ -8,7 +8,7 @@ $t-solidwhite: rgba(255, 255, 255, 0.9);
 $t-notsolidwhite: rgba(255, 255, 255, 0.25);
 $t-clearwhite: rgba(255, 255, 255, 0.05);
 $t-clear: rgba(255, 255, 255, 0);
-$t-clearblack: rgba(0, 0, 0, 0.65);
+$t-clearblack: rgba(0, 0, 0, 1);
 
 // Gradients
 $g-arrow: linear-gradient(45deg, $t-solidwhite, $t-notsolidwhite 2%, $t-clearwhite  20%, $t-clear 30%);
@@ -46,4 +46,34 @@ font-family: 'Londrina Outline', cursive;
 // WORK \\
 .section--work {
   padding: 0;
+}
+
+// DETAIL PAGE \\
+.section--hero--detail {
+  display: flex;
+  position: relative;
+  top: 3rem;
+  background: $c-primary;
+  color: $c-secondary;
+}
+
+.hero--detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0;
+
+  &__info {
+    flex-basis: 60%;
+  }
+
+  &__tech {
+    flex-basis: 40%;
+    text-align: right;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+
 }

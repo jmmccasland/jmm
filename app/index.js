@@ -4,7 +4,6 @@ const arrow = document.querySelector('.hero__arrow');
 const element = document.querySelector('.section--work');
 
 arrow.addEventListener('click', () => {
-  console.log('YES');
   // element.scrollIntoView();
   // element.scrollIntoView(false);
   // element.scrollIntoView({ block: 'end' });

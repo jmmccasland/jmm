@@ -3,8 +3,16 @@
 $c-primary: #000;
 $c-secondary: #fff;
 
+// Translucent Colors
+$t-solidwhite: rgba(255, 255, 255, 1);
+$t-notsolidwhite: rgba(255, 255, 255, 0.25);
+$t-clearwhite: rgba(255, 255, 255, 0.05);
+$t-clear: rgba(255, 255, 255, 0);
+$t-clearblack: rgba(0, 0, 0, 0.65);
+
 // Gradients
-$g-arrow: linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.25) 2%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0) 35%);
+$g-arrow: linear-gradient(45deg, $t-solidwhite, $t-notsolidwhite 2%, $t-clearwhite  30%, $t-clear 35%);
+$g-blackoverlay: linear-gradient($t-clearblack, $t-clearblack);
 
 
 // Shadows & Borders

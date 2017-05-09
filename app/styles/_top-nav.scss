@@ -1,17 +1,17 @@
 // TOP NAV \\
 .section--top-nav {
   position: fixed;
-  z-index: 100;
-  height: 3rem;
   width: 100%;
+  height: 3rem;
   padding: $m-gutter;
   background: $c-primary;
+  z-index: 100;
 }
 
 .logo {
   margin: 0;
+  color: $c-secondary;
+  font-family: 'Archivo Black', sans-serif;
   font-size: 2rem;
   line-height: 2rem;
-  font-family: 'Archivo Black', sans-serif;
-  color: $c-secondary;
 }

@@ -1,7 +1,8 @@
 // VARIABLES \\
 // Colors
 $c-primary: SeaGreen ;
-$c-secondary: #fff;
+$c-secondary: SteelBlue;
+$c-text: #fff;
 
 // Translucent Colors
 $t-solidwhite: rgba(255, 255, 255, 0.9);
@@ -17,6 +18,7 @@ $g-blackoverlay: linear-gradient($t-clearblack, $t-clearblack);
 
 
 // Shadows & Borders
+$b-basic: 1px solid $c-text;
 
 
 // Measurements
@@ -55,7 +57,7 @@ font-family: 'Londrina Outline', cursive;
   position: relative;
   top: 3rem;
   background: SteelBlue;
-  color: $c-secondary;
+  color: $c-text;
 }
 
 .hero--detail {
@@ -70,11 +72,16 @@ font-family: 'Londrina Outline', cursive;
 
   &__tech {
     flex-basis: 40%;
-    text-align: right;
   }
 
   &__title {
     font-size: 3rem;
   }
+}
 
+// TECH LIST COMPONENT \\
+.tech-list {
+  &__title {
+    border-bottom: $b-basic;
+  }
 }

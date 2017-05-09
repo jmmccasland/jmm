@@ -6,7 +6,7 @@
   justify-content: center;
   height: 100vh;
   background: $c-primary;
-  color: $c-secondary;
+  color: $c-text;
 }
 
 .hero {
@@ -47,8 +47,8 @@
     width: 2.5rem;
     height: 2.5rem;
     transform: rotate(-45deg);
-    border-bottom: 0.1rem solid $c-secondary;
-    border-left: 0.1rem solid $c-secondary;
+    border-bottom: 0.1rem solid $c-text;
+    border-left: 0.1rem solid $c-text;
   }
 }
 

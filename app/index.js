@@ -1,12 +1,9 @@
 import 'whatwg-fetch';
+import jump from 'jump.js';
 
-const arrow = document.querySelector('.hero__arrow');
-const element = document.querySelector('.section--work');
 
-arrow.addEventListener('click', () => {
-  // element.scrollIntoView();
-  // element.scrollIntoView(false);
-  // element.scrollIntoView({ block: 'end' });
-  // element.scrollIntoView({ block: 'end', behavior: 'smooth' });
-  window.scrollTo(0, 10000);
+const element = document.querySelector('.hero__arrow');
+
+element.addEventListener('click', () => {
+  jump('#work');
 });

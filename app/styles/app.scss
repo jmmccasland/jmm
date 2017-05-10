@@ -1,8 +1,8 @@
 // VARIABLES \\
 // Colors
-$c-primary: #000;
-$c-secondary: #aaa;
-$c-text: #fff;
+$c-primary: seagreen;
+$c-secondary: steelblue;
+$c-text: white;
 
 // Translucent Colors
 $t-solidwhite: rgba(255, 255, 255, 0.9);
@@ -39,6 +39,7 @@ font-family: 'Londrina Outline', cursive;
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black|Londrina+Outline|Open+Sans|Open+Sans+Condensed:300'); // GOOGLE fonts
+@import url('https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css'); // Devicon logos
 @import 'box-sizing'; // Really great box-sizing styles, thanks OP!
 @import 'resets'; // Default style resets to make elements play nicely with minimal effort
 @import 'layout'; // Styles for site-wide layout (.section, .container, .grid, etc)
@@ -55,8 +56,8 @@ font-family: 'Londrina Outline', cursive;
 .section--hero--detail {
   display: flex;
   position: relative;
-  top: 3rem;
-  background: SteelBlue;
+  top: 4rem;
+  background: $c-secondary;
   color: $c-text;
 }
 
@@ -66,12 +67,12 @@ font-family: 'Londrina Outline', cursive;
   justify-content: space-between;
   padding: 5rem 0;
 
-  &__info {
-    flex-basis: 60%;
+  > * {
+    flex-grow: 1;
   }
 
   &__tech {
-    flex-basis: 40%;
+    margin-left: $m-gutter * 6;
   }
 
   &__title {
@@ -81,7 +82,35 @@ font-family: 'Londrina Outline', cursive;
 
 // TECH LIST COMPONENT \\
 .tech-list {
+  display: flex;
+
+  > * + * {
+    margin-left: $m-gutter;
+  }
+
+  &__item {
+    > * {
+      font-size: 5rem;
+    }
+  }
+
   &__title {
-    border-bottom: $b-basic;
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero--detail {
+    flex-basis: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero--detail__info {
+    margin-bottom: $m-gutter;
+  }
+
+  .hero--detail__tech {
+    margin-left: 0;
   }
 }

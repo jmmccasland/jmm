@@ -2,9 +2,10 @@
 .section--hero {
   display: flex;
   position: relative;
+  // top: 4rem;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 92vh;
   background: $c-primary;
   color: $c-text;
 }
@@ -38,10 +39,8 @@
     position: absolute;
     bottom: 2rem;
     left: 50%;
-
     margin: 0;
     transform: translateX(-50%);
-
   }
 
   &__arrow__lines {

@@ -4,6 +4,10 @@ $c-primary: seagreen;
 $c-secondary: steelblue;
 $c-text: white;
 
+// PROJECT COLORS
+$c-fortyten: #343435;
+$c-rockspot: #36685d;
+
 // Translucent Colors
 $t-solidwhite: rgba(255, 255, 255, 0.9);
 $t-notsolidwhite: rgba(255, 255, 255, 0.25);
@@ -52,7 +56,35 @@ font-family: 'Londrina Outline', cursive;
 @import './components/banner'; // Banner component styles
 
 
-// WORK \\
+// PROJECT SPECIFIC STYLES \\
+.project-mockup {
+  border-radius: 0.25rem;
+
+  &--fortyten {
+    border: 5px solid $c-fortyten;
+  }
+
+  &--rockspot {
+    border: 5px solid $c-rockspot;
+  }
+}
+
+
+// Detail Page Styles \\
+.content {
+  // max-width: 50rem;
+  margin: 0 auto;
+  padding: $m-gutter * 2;
+
+  > * + * {
+    margin-top: $m-gutter * 3;
+
+  }
+}
+
+
+
+// WORK - INDEX PAGE STYLES \\
 .section--work {
   height: calc(100vh - 4rem);
   padding: 0;

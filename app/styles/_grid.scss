@@ -5,9 +5,11 @@
   flex-wrap: wrap;
 
   &__item {
-    flex-basis: calc(100% / 3);
-    flex-grow: 1;
-    min-width: 20rem;
+    flex: 1 1 400px;
+    //   -webkit-flex: 1 1 318px;
+    // flex-grow: 1;
+    // flex-shrink: 1;
+    // min-width: 20rem;
     height: calc(50vh - 2rem);
   }
 }

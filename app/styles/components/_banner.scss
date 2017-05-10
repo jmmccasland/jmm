@@ -11,14 +11,21 @@
     font-size: 1.125rem;
     font-weight: 100;
     letter-spacing: 1px;
-    line-height: 1.8rem;
+    line-height: 2rem;
   }
+}
+
+.partner {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: darken($c-secondary, 10%);
 }
 
 .tech-list {
   display: flex;
   flex-basis: 40%;
   flex-wrap: wrap;
+  align-items: center;
 
   > * {
     margin: 0 $m-gutter $m-gutter 0;
@@ -35,11 +42,17 @@
   }
 }
 
+.tech-image {
+  width: 5rem;
+}
+
 .view-list {
   display: flex;
 
   &__item {
-    width: 50%;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
     padding: $m-gutter;
     border-radius: 0.25rem;
     background: darken($c-secondary, 10%);

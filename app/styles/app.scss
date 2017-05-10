@@ -48,6 +48,9 @@ font-family: 'Londrina Outline', cursive;
 @import 'grid'; // No margin grid on index with hover states
 @import 'banner'; // Styles for banners on detail page
 
+// Components \\
+@import './components/banner'; // Banner component styles
+
 
 // WORK \\
 .section--work {

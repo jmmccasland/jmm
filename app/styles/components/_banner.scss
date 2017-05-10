@@ -1,0 +1,61 @@
+
+// Banner Component Styles \\
+.detail {
+  &__title {
+    margin-bottom: $m-gutter * 2;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  &__description {
+    font-size: 1.125rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+  }
+}
+
+.tech-list {
+  display: flex;
+  flex-basis: 40%;
+  flex-wrap: wrap;
+
+  > * {
+    margin: 0 $m-gutter $m-gutter 0;
+  }
+
+  &__item {
+    > * {
+      font-size: 5rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.125rem;
+  }
+}
+
+.view-list {
+  display: flex;
+
+  &__item {
+    width: 50%;
+    padding: $m-gutter;
+    border-radius: 0.25rem;
+    background: darken($c-secondary, 10%);
+    font-size: 1.125rem;
+    text-align: center;
+  }
+
+  > * + * {
+    margin-left: $m-gutter;
+  }
+}
+
+
+@media (max-width: 850px) {
+  // Components
+  .detail__title {
+    line-height: normal;
+  }
+}

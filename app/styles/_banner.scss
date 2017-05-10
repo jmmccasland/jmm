@@ -1,0 +1,89 @@
+// Banner Layout Styles \\
+.section--banner {
+  background: $c-secondary;
+  color: $c-text;
+}
+
+
+.banner {
+  padding: 0 $m-gutter;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+
+    &__left {
+      margin-right: $m-gutter * 6;
+    }
+
+    > * {
+      flex-grow: 1;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .banner {
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__top__left {
+      margin-right: 0;
+    }
+  }
+}
+
+
+// Banner Component Styles \\
+.detail {
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__description {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+  }
+}
+
+.tech-list {
+  display: flex;
+
+  > * + * {
+    margin-left: $m-gutter;
+  }
+
+  &__item {
+    > * {
+      font-size: 5rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.125rem;
+  }
+}
+
+.view-list {
+  display: flex;
+
+  &__item {
+    width: 50%;
+    padding: $m-gutter;
+    border-radius: 0.25rem;
+    background: darken($c-secondary, 10%);
+    font-size: 1.125rem;
+    text-align: center;
+  }
+
+  > * + * {
+    margin-left: $m-gutter;
+  }
+}

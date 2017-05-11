@@ -2,9 +2,16 @@
 .section--top-nav {
   position: fixed;
   width: 100%;
-  padding: $m-gutter;
+  padding: $m-gutter ($m-gutter * 2);
   background: $c-primary;
   z-index: 100;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $c-text;
 }
 
 .logo {

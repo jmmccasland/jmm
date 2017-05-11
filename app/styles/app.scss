@@ -40,8 +40,8 @@ font-family: 'Londrina Outline', cursive;
 **************************************/
 
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black|Londrina+Outline|Open+Sans|Open+Sans+Condensed:300|Lato'); // GOOGLE fonts
 @import url('https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css'); // Devicon logos
 @import 'box-sizing'; // Really great box-sizing styles, thanks OP!
@@ -55,6 +55,133 @@ font-family: 'Londrina Outline', cursive;
 
 // Components \\
 @import './components/banner'; // Banner component styles
+
+
+
+// MENU \\
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+
+  &__text {
+    margin: 0;
+  }
+
+  &__burger {
+    position: relative;
+  }
+}
+
+.ham {
+  position: relative;
+  border-radius: 0.2rem;
+  width: 1.5rem;
+  height: 2px;
+  margin: 5px 0;
+  background: $c-text;
+
+  &--mid {
+    right: 0;
+    transition: right 1000ms, width 1000ms;
+
+    &--open {
+      right: 3rem;
+      width: 3rem;
+      transition: right 1000ms, background 1000ms;
+      background: $t-clear;
+    }
+  }
+
+  &--top {
+    transition: left 1000ms, top 1000ms, transform 1000ms;
+
+    &--open {
+      top: 0.5rem;
+      left: 1rem;
+      transform: translateY(-50%);
+      transform: rotate(45deg);
+    }
+  }
+
+  &--bottom {
+    transition: left 1000ms, top 1000ms, transform 1000ms;
+
+    &--open {
+      bottom: 0.4rem;
+      left: 1rem;
+      transform: translateY(-50%);
+      transform: rotate(-45deg);
+    }
+  }
+
+}
+
+
+// MENU  Transitions\\
+.outer-wrap {
+  position: relative;
+  left: 0;
+  transition: left 1s;
+
+  &--open {
+    left: -18rem;
+    transition: left 1s;
+  }
+}
+
+.section--menu {
+  position: fixed;
+  top: 0;
+  right: -18rem;
+  width: 18rem;
+  height: 100vh;
+  margin: 0;
+  padding-top: 0;
+  transition: right 1000ms;
+  background: $c-primary;
+  color: $c-text;
+  z-index: 99;
+
+
+  &--open {
+    right: 0;
+    transition: right 1000ms;
+  }
+}
+
+// Nav List Styles \\
+.nav-list {
+  margin: 4rem 0 0;
+
+  &__item {
+    padding: 1rem;
+    font-size: 1.75rem;
+
+    > * {
+      font-size: 2.2rem;
+    }
+
+    > * + * {
+      margin-left: $m-gutter;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 // PROJECT SPECIFIC STYLES \\

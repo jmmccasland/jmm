@@ -1,4 +1,8 @@
 // LAYOUT \\
+.site-wrap {
+
+}
+
 .wrapper { // for pushing page down below fixed nav bar
   position: relative;
   top: 4rem;
@@ -10,5 +14,10 @@
 
 .container {
   max-width: 75rem;
+  margin: 0 auto;
+}
+
+.container--large {
+  max-width: 1500px;
   margin: 0 auto;
 }

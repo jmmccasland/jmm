@@ -2,10 +2,10 @@
 .section--hero {
   display: flex;
   position: relative;
-  top: -2rem;
   align-items: center;
   justify-content: center;
-  height: calc(96vh - 4rem);
+  height: calc(90vh - 4rem);
+  margin-bottom: 4rem;
   background: $c-primary;
   color: $c-text;
 }

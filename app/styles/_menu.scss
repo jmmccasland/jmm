@@ -1,0 +1,129 @@
+
+// MENU \\
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+
+  &__text {
+    margin: 0;
+  }
+
+  &__burger {
+    position: relative;
+  }
+}
+
+.ham {
+  position: relative;
+  width: 1.5rem;
+  height: 2px;
+  margin: 5px 0;
+  border-radius: 0.2rem;
+  background: $c-text;
+
+  &--wrap {
+
+    &--open {
+      // transform: translateY(-50);
+      transition: transform 800ms;
+    }
+  }
+
+  &--mid {
+    right: 0;
+    width: 1.5rem;
+    transition: right 800ms, width 800ms, background 800ms;
+
+    &--open {
+      right: 3rem;
+      width: 3rem;
+      transition: right 800ms, width 800ms, background 800ms;
+      background: $t-clear;
+    }
+  }
+
+  &--top {
+    top: 0;
+    left: 0;
+    // transform: rotate(0deg);
+    transition: left 800ms, top 800ms, transform 800ms;
+
+    &--open {
+      top: 0.45rem;
+      left: 1rem;
+      transform: rotate(45deg);
+      transition: left 800ms, top 800ms, transform 800ms;
+    }
+  }
+
+  &--bottom {
+    bottom: 0;
+    left: 0;
+    // transform: rotate(0deg);
+    transition: left 800ms, bottom 800ms, transform 800ms;
+
+    &--open {
+      bottom: 0.4rem;
+      left: 1rem;
+      // transform: translateY(-50%);
+      transform: rotate(-45deg);
+      transition: left 800ms, bottom 800ms, transform 800ms;
+    }
+  }
+}
+
+
+// MENU  Transitions\\
+.outer-wrap { // wraps whole web page
+  position: relative;
+  left: 0;
+  transition: left 800ms;
+
+  &--open {
+    left: -18rem;
+    transition: left 800ms;
+  }
+}
+
+.section--menu {
+  position: fixed;
+  top: 0;
+  right: -18rem;
+  width: 18rem;
+  height: 100vh;
+  margin: 0;
+  padding-top: 0;
+  transition: right 800ms;
+  background: $c-secondary;
+  color: $c-text;
+  z-index: 99;
+
+
+  &--open {
+    right: 0;
+    transition: right 800ms;
+  }
+}
+
+
+// Nav List Styles \\
+.nav-list {
+  margin: 4rem 0 0;
+
+  &__item {
+    padding: 1rem;
+    font-size: 1.75rem;
+
+    > * {
+      font-size: 2.2rem;
+    }
+
+    > * + * {
+      margin-left: $m-gutter;
+    }
+  }
+}

@@ -9,9 +9,10 @@ const mid = document.querySelector('.ham--mid');
 const top = document.querySelector('.ham--top');
 const bottom = document.querySelector('.ham--bottom');
 const hamWrap = document.querySelector('.ham--wrap');
+let menuOpen = false;
 
-
-btn.addEventListener('click', () => {
+// Toggles menu
+function menuToggle() {
   console.log('This menu just a little bit a vanilla js that adds/removes classes.');
 
   if (menu.classList.contains('section--menu--open')) {
@@ -21,6 +22,8 @@ btn.addEventListener('click', () => {
     top.classList.remove('ham--top--open');
     bottom.classList.remove('ham--bottom--open');
     hamWrap.classList.remove('ham--wrap--open');
+    menuOpen = !menuOpen;
+    console.log(menuOpen);
   } else {
     body.classList.add('outer-wrap--open');
     menu.classList.add('section--menu--open');
@@ -28,11 +31,25 @@ btn.addEventListener('click', () => {
     top.classList.add('ham--top--open');
     bottom.classList.add('ham--bottom--open');
     hamWrap.classList.add('ham--wrap--open');
+    menuOpen = !menuOpen;
+    console.log(menuOpen);
   }
+}
+
+btn.addEventListener('click', () => {
+  menuToggle();
 });
 
 
+document.querySelector('.wrapper').addEventListener('click', () => {
+  if (menuOpen == true) {
+    menuToggle();
+  }
+});
+
+// ----------------------
 // Arrow scroll function
+// ----------------------
 const element = document.querySelector('.hero__arrow');
 
 element.addEventListener('click', () => {

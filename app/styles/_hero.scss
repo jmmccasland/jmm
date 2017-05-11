@@ -2,10 +2,10 @@
 .section--hero {
   display: flex;
   position: relative;
-  // top: 4rem;
+  top: -2rem;
   align-items: center;
   justify-content: center;
-  height: 92vh;
+  height: calc(96vh - 4rem);
   background: $c-primary;
   color: $c-text;
 }
@@ -37,7 +37,7 @@
 
   &__arrow {
     position: absolute;
-    bottom: 2rem;
+    bottom: 3rem;
     left: 50%;
     margin: 0;
     transform: translateX(-50%);

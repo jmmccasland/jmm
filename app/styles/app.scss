@@ -51,6 +51,7 @@ font-family: 'Londrina Outline', cursive;
 @import 'hero'; // Styles for giant hero section
 @import 'grid'; // No margin grid on index with hover states
 @import 'banner'; // Styles for banners on detail page
+// @import 'iosVhFix'; // Fixes iOS 'vh' bug
 
 // Components \\
 @import './components/banner'; // Banner component styles
@@ -72,7 +73,7 @@ font-family: 'Londrina Outline', cursive;
 
 // Detail Page Styles \\
 .content {
-  // max-width: 50rem;
+  max-width: 60rem;
   margin: 0 auto;
   padding: $m-gutter * 2;
 

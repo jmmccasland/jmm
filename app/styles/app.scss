@@ -55,6 +55,17 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // Components \\
 @import './components/banner'; // Banner component styles
 
+// FOOTER \\
+.section--footer {
+  background: $c-primary;
+}
+
+.footer {
+  text-align: center;
+}
+
+
+
 // PROJECT SPECIFIC STYLES \\
 .project-mockup {
   border-radius: 0.25rem;

@@ -81,11 +81,13 @@
 .outer-wrap { // wraps whole web page
   position: relative;
   left: 0;
-  transition: left 800ms;
+  transition: left 400ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 
   &--open {
     left: -18rem;
-    transition: left 800ms;
+    transition: left 400ms;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 }
 
@@ -97,7 +99,8 @@
   height: 100vh;
   margin: 0;
   padding-top: 0;
-  transition: right 800ms;
+  transition: right 400ms;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   background: $c-secondary;
   color: $c-text;
   z-index: 99;
@@ -105,12 +108,20 @@
 
   &--open {
     right: 0;
-    transition: right 800ms;
+    transition: right 400ms;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 }
 
 
 // Nav List Styles \\
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .nav-list {
   margin: 4rem 0 0;
 

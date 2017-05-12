@@ -1,60 +1,65 @@
 import 'whatwg-fetch';
 import jump from 'jump.js';
 
-// Menu Slider
+// Menu Slider Variables
 const btn = document.querySelector('.menu-btn');
 const body = document.querySelector('.outer-wrap');
 const menu = document.querySelector('.section--menu');
-const mid = document.querySelector('.ham--mid');
+
+// Menu Button Variables
 const top = document.querySelector('.ham--top');
+const mid = document.querySelector('.ham--mid');
 const bottom = document.querySelector('.ham--bottom');
 const hamWrap = document.querySelector('.ham--wrap');
 let menuOpen = false;
 
 // Toggles menu
 function menuToggle() {
-  console.log('This menu just a little bit a vanilla js that adds/removes classes.');
-
   if (menu.classList.contains('section--menu--open')) {
     body.classList.remove('outer-wrap--open');
     menu.classList.remove('section--menu--open');
-    mid.classList.remove('ham--mid--open');
     top.classList.remove('ham--top--open');
+    mid.classList.remove('ham--mid--open');
     bottom.classList.remove('ham--bottom--open');
     hamWrap.classList.remove('ham--wrap--open');
     menuOpen = !menuOpen;
-    console.log(menuOpen);
   } else {
     body.classList.add('outer-wrap--open');
     menu.classList.add('section--menu--open');
-    mid.classList.add('ham--mid--open');
     top.classList.add('ham--top--open');
+    mid.classList.add('ham--mid--open');
     bottom.classList.add('ham--bottom--open');
     hamWrap.classList.add('ham--wrap--open');
     menuOpen = !menuOpen;
-    console.log(menuOpen);
   }
 }
 
+// Button Menu Toggle
 btn.addEventListener('click', () => {
   menuToggle();
 });
 
-
+// Outer menu click Menu Toggle
 document.querySelector('.wrapper').addEventListener('click', () => {
   if (menuOpen == true) {
     menuToggle();
   }
 });
 
-// ----------------------
-// Arrow scroll function
-// ----------------------
-const element = document.querySelector('.hero__arrow');
 
-element.addEventListener('click', () => {
-  jump('.target', {
-    offset: -59,
-    callback: () => console.log('Hey! Thanks for caring enough to check this out! I used jump.js for that fancy scroll you just saw. Thanks, Michael! You can check his work out here: https://github.com/callmecavs/jump.js')
-  });
-});
+// Hero Scroll
+function scroll() {
+  if (scrollY < 100000) {
+    jump('.target', {
+      offset: -59,
+      callback: ()  => {
+        const hero = document.querySelector('.section--hero');
+        hero.style.display = 'none';
+      }
+    });
+  }
+}
+
+window.setTimeout(scroll, 10000);
+
+// hero on 'scroll' jump.js callback delete hero?

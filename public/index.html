@@ -9,27 +9,20 @@
 </head>
 
 <body>
-<div class="outer-wrap">
-  <!-- Top Navigtion -->
   <div class="section section--top-nav">
     <div class="top-nav">
-      <a href="./index.html"><h1 class="logo">JMM</h1></a>
+      <h1 class="logo">JMM</h1>
       <div class="menu-btn">
         <p class="menu-btn__text">MENU</p>
-        <div class="menu-btn__burger">
-          <div class="ham--wrap">
-            <div class="ham ham--top"></div>
-          </div>
-
-          <div class="ham ham--mid"></div>
-
-          <div class="ham--wrap">
-            <div class="ham ham--bottom"></div>
-          </div>
+        <div class="hamburger">
+          <div class="line line--top"></div>
+          <div class="line line--mid"></div>
+          <div class="line line--bottom"></div>
         </div>
       </div>
     </div>
   </div>
+
 
   <!-- Right Side Hidden Menu -->
   <div class="section section--menu">
@@ -45,109 +38,108 @@
             <span class=""></span>
           </li>
         </ul>
-
       </div>
     </div>
   </div>
 
   <div class="wrapper">
-  <!-- Hero -->
-  <div class="section section--hero">
-    <div class="container">
-      <div class="hero">
-        <h2 class="hero__name">John Michael McCasland</h2>
-        <p class="hero__message">is a Front End Web Developer <span class="hero__message__span">(and a lot of other things too!)</span></p>
+    <!-- Hero -->
+    <div class="section section--hero">
+      <div class="container">
+        <div class="hero">
+          <h2 class="hero__name">John Michael McCasland</h2>
+          <p class="hero__message">is a Front End Web Developer <span class="hero__message__span">(and a lot of other things too!)</span></p>
+        </div>
       </div>
-    </div>
-    <!-- <div class="hero__arrow">
+      <!-- <div class="hero__arrow">
       <div class="hero__arrow__lines"></div>
     </div> -->
-  </div>
+    </div>
 
-  <!-- Work -->
-  <div class="target section section--work">
-    <div class="grid container--large">
+    <!-- Work -->
+    <div class="target section section--work">
+      <div class="grid container--large">
 
-      <!-- Forty Ten Barber Studio -->
-      <div class="grid__item">
-        <a href="./fortyten.html"  alt="Forty Ten Barber Studio Details">
+        <!-- Forty Ten Barber Studio -->
+        <div class="grid__item">
+          <a href="./fortyten.html" alt="Forty Ten Barber Studio Details">
+            <div class="card">
+              <img class="card__image" src="./images/fortyten/realistic.png" alt="Forty Ten Barber Studio">
+              <div class="card__overlay">
+                <h3 class="card__overlay__title">Forty Ten Barber Studio</h3>
+                <p class="card__overlay__description">Static Client Site</p>
+                <p>May 2017</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Rockspot -->
+        <div class="grid__item">
+          <a href="./rockspot.html">
+            <div class="card">
+              <img class="card__image" src="./images/rockspot/realistic.png" alt="RockSpot">
+              <div class="card__overlay">
+                <h3 class="card__overlay__title">Rockspot</h3>
+                <p class="card__overlay__description">Iron Yard Final Project</p>
+                <p>April 2017</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Razer Cars -->
+        <div class="grid__item">
           <div class="card">
             <img class="card__image" src="./images/fortyten/realistic.png" alt="Forty Ten Barber Studio">
             <div class="card__overlay">
-              <h3 class="card__overlay__title">Forty Ten Barber Studio</h3>
-              <p class="card__overlay__description">Static Client Site</p>
-              <p>May 2017</p>
+              <h3 class="card__overlay__title">Razer Cars</h3>
+              <p class="card__overlay__description">Iron Yard Ember.js Project</p>
+              <p>March 2017</p>
             </div>
           </div>
-        </a>
-      </div>
+        </div>
 
-      <!-- Rockspot -->
-      <div class="grid__item">
-        <a href="./rockspot.html">
+        <!-- Marvel -->
+        <div class="grid__item">
           <div class="card">
-            <img class="card__image" src="./images/rockspot/realistic.png" alt="RockSpot">
+            <img class="card__image" src="./images/fortyten/realistic.png" alt="Forty Ten Barber Studio">
             <div class="card__overlay">
-              <h3 class="card__overlay__title">Rockspot</h3>
-              <p class="card__overlay__description">Iron Yard Final Project</p>
-              <p>April 2017</p>
+              <h3 class="card__overlay__title">Marvel Series Profile</h3>
+              <p class="card__overlay__description">Vue JS w/ Marvel API</p>
+              <p>March 2017</p>
             </div>
           </div>
-        </a>
-      </div>
-
-      <!-- Razer Cars -->
-      <div class="grid__item">
-        <div class="card">
-          <img class="card__image" src="./images/fortyten/realistic.png" alt="Forty Ten Barber Studio">
-          <div class="card__overlay">
-            <h3 class="card__overlay__title">Razer Cars</h3>
-            <p class="card__overlay__description">Iron Yard Ember.js Project</p>
-            <p>March 2017</p>
-          </div>
         </div>
-      </div>
 
-      <!-- Marvel -->
-      <div class="grid__item">
-        <div class="card">
-          <img class="card__image" src="./images/fortyten/realistic.png" alt="Forty Ten Barber Studio">
-          <div class="card__overlay">
-            <h3 class="card__overlay__title">Marvel Series Profile</h3>
-            <p class="card__overlay__description">Vue JS w/ Marvel API</p>
-            <p>March 2017</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Contact Manager -->
-      <div class="grid__item">
-        <div class="card">
-          <img class="card__image" src="./images/fortyten/realistic.png" alt="Forty Ten Barber Studio">
-          <div class="card__overlay">
-            <h3 class="card__overlay__title">Contact Manager</h3>
-            <p class="card__overlay__description">Vanilla JS CRUD</p>
-            <p>March 2017</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Spotify Collection -->
-      <div class="grid__item">
-        <a href="http://spotify-collection.byjohnmichael.com/" target="_blank" alt="Spotify Collection">
+        <!-- Contact Manager -->
+        <div class="grid__item">
           <div class="card">
-            <img class="card__image" src="./images/spotify/realistic.png" alt="Spotify Collection">
+            <img class="card__image" src="./images/fortyten/realistic.png" alt="Forty Ten Barber Studio">
             <div class="card__overlay">
-              <h3 class="card__overlay__title">Spotify Collection</h3>
-              <p class="card__overlay__description">Iron Yard JS Project</p>
-              <p>April 2017</p>
+              <h3 class="card__overlay__title">Contact Manager</h3>
+              <p class="card__overlay__description">Vanilla JS CRUD</p>
+              <p>March 2017</p>
             </div>
           </div>
-        </a>
-      </div>
+        </div>
 
-      <!-- Twitch -->
-      <!-- <div class="grid__item">
+        <!-- Spotify Collection -->
+        <div class="grid__item">
+          <a href="http://spotify-collection.byjohnmichael.com/" target="_blank" alt="Spotify Collection">
+            <div class="card">
+              <img class="card__image" src="./images/spotify/realistic.png" alt="Spotify Collection">
+              <div class="card__overlay">
+                <h3 class="card__overlay__title">Spotify Collection</h3>
+                <p class="card__overlay__description">Iron Yard JS Project</p>
+                <p>April 2017</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Twitch -->
+        <!-- <div class="grid__item">
         <div class="card">
           <img class="card__image" src="./images/twitch/realistic.png" alt="Twitch CSS Practice">
           <div class="card__overlay">
@@ -157,8 +149,8 @@
         </div>
       </div> -->
 
-      <!-- T-Shirts -->
-      <!-- <div class="grid__item">
+        <!-- T-Shirts -->
+        <!-- <div class="grid__item">
         <div class="card">
           <img class="card__image" src="./images/fortyten/realistic.png" alt="Forty Ten Barber Studio">
           <div class="card__overlay">
@@ -168,11 +160,11 @@
         </div>
       </div> -->
 
+      </div>
     </div>
-  </div>
 
-</div><!-- /.wrapper -->
-</div><!-- /.outer-wrap -->
+  </div>
+  <!-- /.wrapper -->
   <script src="/app.js" charset="utf-8"></script>
 </body>
 

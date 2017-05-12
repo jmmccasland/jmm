@@ -1,127 +1,54 @@
 
-// Hamburger Stuff\\
+
+body {
+  position: relative;
+  right: 0;
+  margin: 0;
+  transition: right 800ms;
+}
+
+.body {
+  &--open {
+    position: relative;
+    right: 18rem;
+    transition: right 800ms;
+  }
+}
+
+
+// Menu Button
 .menu-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 5rem;
-  font-size: 1.25rem;
   cursor: pointer;
 
   &__text {
-    margin: 0;
-  }
-
-  &__burger {
-    position: relative;
-  }
-}
-
-.ham {
-  position: relative;
-  width: 1.5rem;
-  height: 2px;
-  margin: 5px 0;
-  border-radius: 0.2rem;
-  background: $c-text;
-
-  &--wrap {
-
-    &--open {
-      // transform: translateY(-50);
-      transition: transform 800ms;
-    }
-  }
-
-  &--mid {
-    right: 0;
-    width: 1.5rem;
-    transition: right 800ms, width 800ms, background 800ms;
-
-    &--open {
-      right: 3rem;
-      width: 3rem;
-      transition: right 800ms, width 800ms, background 800ms;
-      background: $t-clear;
-    }
-  }
-
-  &--top {
-    top: 0;
-    left: 0;
-    // transform: rotate(0deg);
-    transition: left 800ms, top 800ms, transform 800ms;
-
-    &--open {
-      top: 0.45rem;
-      left: 1rem;
-      transform: rotate(45deg);
-      transition: left 800ms, top 800ms, transform 800ms;
-    }
-  }
-
-  &--bottom {
-    bottom: 0;
-    left: 0;
-    // transform: rotate(0deg);
-    transition: left 800ms, bottom 800ms, transform 800ms;
-
-    &--open {
-      bottom: 0.4rem;
-      left: 1rem;
-      // transform: translateY(-50%);
-      transform: rotate(-45deg);
-      transition: left 800ms, bottom 800ms, transform 800ms;
-    }
+    margin: 0 1rem 0 0;
   }
 }
 
 
-// MENU  Transitions\\
-.outer-wrap { // wraps whole web page
-  position: relative;
-  left: 0;
-  transition: left 400ms;
-  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-
-  &--open {
-    left: -18rem;
-    transition: left 400ms;
-    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-  }
-}
-
+// Menu
 .section--menu {
+  display: flex;
   position: fixed;
   top: 0;
   right: -18rem;
+  flex-direction: column;
+  justify-content: space-between;
   width: 18rem;
   height: 100vh;
-  margin: 0;
-  padding-top: 0;
-  transition: right 400ms;
-  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: right 800ms;
   background: $c-secondary;
   color: $c-text;
-  z-index: 99;
-
 
   &--open {
     right: 0;
-    transition: right 400ms;
-    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 }
 
-
 // Nav List Styles \\
-.menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
 .nav-list {
   margin: 4rem 0 0;
 
@@ -135,6 +62,53 @@
 
     > * + * {
       margin-left: $m-gutter;
+    }
+  }
+}
+
+
+// Hamburger
+.hamburger {
+  > * + * {
+    margin-top: 0.25rem;
+  }
+}
+
+.line {
+  position: relative;
+  width: 1.5rem;
+  height: 2px;
+  border-radius: 0.3rem;
+  background: $c-text;
+
+  &--mid {
+    right: 0;
+    transition: right 800ms, background 800ms, width 800ms;
+
+    &--open {
+      right: 4rem;
+      width: 3.1rem;
+      background: $t-clear;
+    }
+  }
+
+  &--top {
+    top: 0;
+    transition: top 800ms, transform 800ms;
+
+    &--open {
+      top: 0.25rem;
+      transform: rotate(45deg);
+    }
+  }
+
+  &--bottom {
+    bottom: 0;
+    transition: bottom 800ms, transform 800ms;
+
+    &--open {
+      bottom: 0.5rem;
+      transform: rotate(-45deg);
     }
   }
 }

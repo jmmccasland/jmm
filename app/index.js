@@ -1,65 +1,54 @@
 import 'whatwg-fetch';
 import jump from 'jump.js';
 
-// Menu Slider Variables
-const btn = document.querySelector('.menu-btn');
-const body = document.querySelector('.outer-wrap');
-const menu = document.querySelector('.section--menu');
-
-// Menu Button Variables
-const top = document.querySelector('.ham--top');
-const mid = document.querySelector('.ham--mid');
-const bottom = document.querySelector('.ham--bottom');
-const hamWrap = document.querySelector('.ham--wrap');
+// Is the menu open?
 let menuOpen = false;
 
-// Toggles menu
-function menuToggle() {
-  if (menu.classList.contains('section--menu--open')) {
-    body.classList.remove('outer-wrap--open');
-    menu.classList.remove('section--menu--open');
-    top.classList.remove('ham--top--open');
-    mid.classList.remove('ham--mid--open');
-    bottom.classList.remove('ham--bottom--open');
-    hamWrap.classList.remove('ham--wrap--open');
+// Menu Button Variables
+const menuBtn = document.querySelector('.menu-btn');
+
+// Menu Variables
+const body = document.querySelector('body');
+const menu = document.querySelector('.section--menu');
+
+// Hamburger Variables
+const mid = document.querySelector('.line--mid');
+const topLine = document.querySelector('.line--top');
+const bottom = document.querySelector('.line--bottom');
+
+
+menuBtn.addEventListener('click', () => {
+  if (!menuOpen) {
+    menu.classList.add('section--menu--open');
+    body.classList.add('body--open');
+    mid.classList.add('line--mid--open');
+    topLine.classList.add('line--top--open');
+    bottom.classList.add('line--bottom--open');
     menuOpen = !menuOpen;
   } else {
-    body.classList.add('outer-wrap--open');
-    menu.classList.add('section--menu--open');
-    top.classList.add('ham--top--open');
-    mid.classList.add('ham--mid--open');
-    bottom.classList.add('ham--bottom--open');
-    hamWrap.classList.add('ham--wrap--open');
+    menu.classList.remove('section--menu--open');
+    body.classList.remove('body--open');
+    mid.classList.remove('line--mid--open');
+    topLine.classList.remove('line--top--open');
+    bottom.classList.remove('line--bottom--open');
     menuOpen = !menuOpen;
-  }
-}
-
-// Button Menu Toggle
-btn.addEventListener('click', () => {
-  menuToggle();
-});
-
-// Outer menu click Menu Toggle
-document.querySelector('.wrapper').addEventListener('click', () => {
-  if (menuOpen == true) {
-    menuToggle();
   }
 });
 
 
 // Hero Scroll
-function scroll() {
-  if (scrollY < 100000) {
-    jump('.target', {
-      offset: -59,
-      callback: ()  => {
-        const hero = document.querySelector('.section--hero');
-        hero.style.display = 'none';
-      }
-    });
-  }
-}
-
-window.setTimeout(scroll, 10000);
+// function scroll() {
+//   if (scrollY < 100000) {
+//     jump('.target', {
+//       offset: -59,
+//       callback: ()  => {
+//         const hero = document.querySelector('.section--hero');
+//         hero.style.display = 'none';
+//       }
+//     });
+//   }
+// }
+//
+// window.setTimeout(scroll, 10000);
 
 // hero on 'scroll' jump.js callback delete hero?

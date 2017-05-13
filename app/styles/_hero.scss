@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh - 4rem);
-  background: $c-primary;
-  color: $c-text;
+  background: $g-brandgradientinverse;
+  color: $c-textdark;
 }
 
 .hero {
@@ -46,8 +46,8 @@
     width: 2.5rem;
     height: 2.5rem;
     transform: rotate(-45deg);
-    border-bottom: 0.1rem solid $c-text;
-    border-left: 0.1rem solid $c-text;
+    border-bottom: 0.1rem solid $c-textlight;
+    border-left: 0.1rem solid $c-textlight;
   }
 }
 

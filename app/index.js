@@ -17,7 +17,7 @@ const topLine = document.querySelector('.line--top');
 const bottom = document.querySelector('.line--bottom');
 
 
-menuBtn.addEventListener('click', () => {
+function toggleMenu() {
   if (!menuOpen) {
     menu.classList.add('section--menu--open');
     body.classList.add('body--open');
@@ -33,22 +33,9 @@ menuBtn.addEventListener('click', () => {
     bottom.classList.remove('line--bottom--open');
     menuOpen = !menuOpen;
   }
+}
+
+// Menu Btn - Menu Toggle
+menuBtn.addEventListener('click', () => {
+  toggleMenu();
 });
-
-
-// Hero Scroll
-// function scroll() {
-//   if (scrollY < 100000) {
-//     jump('.target', {
-//       offset: -59,
-//       callback: ()  => {
-//         const hero = document.querySelector('.section--hero');
-//         hero.style.display = 'none';
-//       }
-//     });
-//   }
-// }
-//
-// window.setTimeout(scroll, 10000);
-
-// hero on 'scroll' jump.js callback delete hero?

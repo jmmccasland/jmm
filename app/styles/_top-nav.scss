@@ -3,7 +3,8 @@
   position: fixed;
   width: 100%;
   padding: $m-gutter;
-  background: $c-primary;
+  background: $g-brandgradientreverse;
+  box-shadow: $s-basic;
   z-index: 100;
 }
 
@@ -11,12 +12,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: $c-text;
+  color: $c-textlight;
 }
 
 .logo {
   margin: 0;
-  color: $c-text;
+
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   line-height: 2rem;

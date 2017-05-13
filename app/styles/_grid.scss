@@ -3,13 +3,10 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
+  margin-right: $m-gutter;
 
   &__item {
     flex: 1 1 400px;
-    //   -webkit-flex: 1 1 318px;
-    // flex-grow: 1;
-    // flex-shrink: 1;
-    // min-width: 20rem;
     height: calc(50vh - 2rem);
   }
 }
@@ -20,12 +17,13 @@
   height: 100%;
   padding: $m-gutter;
   z-index: 1;
+  // border: 1px solid red;
 
   &__image {
     width: 100%;
     height: inherit;
-    object-fit: contain;
-    object-position: center center;
+    object-fit: cover;
+    object-position: top center;
   }
 
   &__overlay {
@@ -37,13 +35,14 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 5rem;
     margin: 0;
-    padding: $m-gutter;
+    // padding: $m-gutter ($m-gutter * 2) $m-gutter $m-gutter;
     background: $c-secondary;
-    color: $c-text;
+    color: $c-textlight;
     text-align: center;
     opacity: 0;
+    content: '';
 
     &__title {
       margin: 0;
@@ -55,8 +54,8 @@
       font-size: 1.25rem;
     }
 
-    &:hover {
-      opacity: 1;
-    }
+    // &:hover {
+    //   opacity: 1;
+    // }
   }
 }

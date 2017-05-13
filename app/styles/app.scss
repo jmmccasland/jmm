@@ -1,8 +1,14 @@
 // VARIABLES \\
 // Colors
-$c-primary: seagreen;
-$c-secondary: steelblue;
-$c-text: white;
+$c-primary:        steelblue;
+$c-secondary:      seagreen;
+$c-accent:         linear-gradient(-25deg, $c-primary, $c-secondary);
+
+
+
+
+$c-textdark: #fefefe;
+$c-textlight: #fefefe;
 
 // PROJECT COLORS
 $c-fortyten: #343435;
@@ -16,13 +22,16 @@ $t-clear: rgba(255, 255, 255, 0);
 $t-clearblack: SteelBlue ;
 
 // Gradients
-$g-arrow: linear-gradient(45deg, $t-solidwhite, $t-notsolidwhite 2%, $t-clearwhite  20%, $t-clear 30%);
-// $g-arrow: radial-gradient(circle at left bottom, $t-solidwhite, $t-notsolidwhite 10%, $t-clear 40%);
-$g-blackoverlay: linear-gradient($t-clearblack, $t-clearblack);
+$g-brandgradient: #212121;
+$g-brandgradient: linear-gradient(-25deg, $c-primary, $c-secondary);
+$g-brandgradientreverse: linear-gradient(to left, $c-secondary, $c-primary);
+$g-brandgradientinverse: linear-gradient(45deg, $c-primary, $c-secondary);
 
 
 // Shadows & Borders
-$b-basic: 1px solid $c-text;
+$b-basic: 1px solid $c-textdark;
+$s-basic: 0 1px 8px 2px rgba(0,0,0,0.24);
+$s-left: -3px 63px 5px 2px rgba(0,0,0,0.24);
 
 
 // Measurements
@@ -54,6 +63,11 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 // Components \\
 @import './components/banner'; // Banner component styles
+
+
+::-webkit-scrollbar {
+    display: none;
+}
 
 // FOOTER \\
 .section--footer {

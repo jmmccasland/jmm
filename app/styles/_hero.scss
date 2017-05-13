@@ -1,44 +1,62 @@
 // HERO \\
 .section--hero {
-  position: relative;
   display: flex;
-  justify-content: center;
+  position: relative;
   align-items: center;
-  height: 100vh;
-  background: $c-primary;
-  color: $c-secondary;
+  justify-content: center;
+  height: calc(100vh - 4rem);
+  background: $g-brandgradientinverse;
+  color: $c-textdark;
 }
 
 .hero {
-  text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
-  text-transform: uppercase;
   font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
 
   &__name {
-    font-family: 'Londrina Outline', cursive;
-    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
     font-weight: inherit;
     letter-spacing: 0.5rem;
+    text-transform: uppercase;
   }
 
   &__message {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.15rem;
+
+    &__span {
+      font-size: 0.9rem;
+      font-style: italic;
+      text-transform: lowercase;
+    }
   }
 
   &__arrow {
     position: absolute;
-    bottom: 2rem;
+    bottom: 3rem;
     left: 50%;
-    transform: translateX(-50%);
-    transform: rotate(-45deg);
     margin: 0;
-    border-left: 0.1rem solid $c-secondary;
-    border-bottom: 0.1rem solid $c-secondary;
+    transform: translateX(-50%);
+  }
+
+  &__arrow__lines {
     width: 2.5rem;
     height: 2.5rem;
-    background: rgba(255, 255, 255, 0.025);
+    transform: rotate(-45deg);
+    border-bottom: 0.1rem solid $c-textlight;
+    border-left: 0.1rem solid $c-textlight;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero__name {
+    font-size: 1.5rem;
+  }
+
+  .hero__message {
+    font-size: 0.75rem;
   }
 }

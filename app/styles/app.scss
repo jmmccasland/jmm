@@ -1,12 +1,37 @@
 // VARIABLES \\
 // Colors
-$c-primary: #000;
-$c-secondary: #fff;
+$c-primary:        steelblue;
+$c-secondary:      seagreen;
+$c-accent:         linear-gradient(-25deg, $c-primary, $c-secondary);
+
+
+
+
+$c-textdark: #fefefe;
+$c-textlight: #fefefe;
+
+// PROJECT COLORS
+$c-fortyten: #343435;
+$c-rockspot: #36685d;
+
+// Translucent Colors
+$t-solidwhite: rgba(255, 255, 255, 0.9);
+$t-notsolidwhite: rgba(255, 255, 255, 0.25);
+$t-clearwhite: rgba(255, 255, 255, 0.05);
+$t-clear: rgba(255, 255, 255, 0);
+$t-clearblack: SteelBlue ;
 
 // Gradients
+$g-brandgradient: #212121;
+$g-brandgradient: linear-gradient(-25deg, $c-primary, $c-secondary);
+$g-brandgradientreverse: linear-gradient(to left, $c-secondary, $c-primary);
+$g-brandgradientinverse: linear-gradient(45deg, $c-primary, $c-secondary);
 
 
 // Shadows & Borders
+$b-basic: 1px solid $c-textdark;
+$s-basic: 0 1px 8px 2px rgba(0,0,0,0.24);
+$s-left: -3px 63px 5px 2px rgba(0,0,0,0.24);
 
 
 // Measurements
@@ -24,11 +49,67 @@ font-family: 'Londrina Outline', cursive;
 **************************************/
 
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Londrina+Outline|Open+Sans|Open+Sans+Condensed:300'); // GOOGLE fonts
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans'); // GOOGLE fonts
 @import 'box-sizing'; // Really great box-sizing styles, thanks OP!
 @import 'resets'; // Default style resets to make elements play nicely with minimal effort
-@import 'layout'; // Styles for site-wide layout (.section, .container, .grid, etc)
+@import 'layout'; // Styles for site-wide layout (wrapper, section, container, etc)
 @import 'top-nav'; // Styles for site-wide top navigation
 @import 'hero'; // Styles for giant hero section
+@import 'grid'; // No margin grid on index with hover states
+@import 'banner'; // Styles for banners on detail page
+@import 'menu'; // Sliding menu styles
+
+// Components \\
+@import './components/banner'; // Banner component styles
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+// FOOTER \\
+.section--footer {
+  background: $c-primary;
+}
+
+.footer {
+  text-align: center;
+}
+
+
+
+// PROJECT SPECIFIC STYLES \\
+.project-mockup {
+  border-radius: 0.25rem;
+
+  &--fortyten {
+    border: 5px solid $c-fortyten;
+  }
+
+  &--rockspot {
+    border: 5px solid $c-rockspot;
+  }
+}
+
+
+// Detail Page Styles \\
+.content {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: $m-gutter * 2;
+
+  > * + * {
+    margin-top: $m-gutter * 3;
+
+  }
+}
+
+
+
+// WORK - INDEX PAGE STYLES \\
+.section--work {
+  height: calc(100vh - 4rem);
+  padding: 0;
+}

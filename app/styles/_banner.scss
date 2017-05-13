@@ -1,0 +1,55 @@
+// Banner Layout Styles \\
+.section--banner {
+  background: $c-accent;
+  color: $c-textlight;
+}
+
+
+.banner {
+  padding: 0 $m-gutter;
+
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+
+    > * {
+      flex-grow: 1;
+    }
+
+    &__left {
+      flex-basis: calc(75% - #{$m-gutter * 6});
+      margin-right: $m-gutter * 6;
+    }
+
+    &__right {
+      flex-basis: 25%;
+    }
+  }
+
+  &__bottom {
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+@media (max-width: 850px) {
+  // Layout
+  .banner {
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &__left {
+        margin-right: 0;
+      }
+
+      > * + *  {
+        margin-top: $m-gutter * 2;
+      }
+    }
+  }
+}

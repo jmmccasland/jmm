@@ -38,3 +38,10 @@ rules:
     - 1
     -
       order: smacss
+
+# No duplicate Properties
+no-duplicate-properties:
+  - 1
+  -
+    exclude:
+      - transform

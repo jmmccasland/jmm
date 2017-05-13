@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JMM</title>
   <link rel="stylesheet" href="/app.css">
 </head>
+
 <body>
-
-  <!-- Top Navigtion -->
   <div class="section section--top-nav">
-      <div class="top-nav">
-        <h1 class="logo">JMM</h1>
-      </div>
-  </div>
-
-  <!-- Hero -->
-  <div class="section section--hero">
-    <div class="container">
-      <div class="hero">
-        <h2 class="hero__name">John Michael McCasland</h2>
-        <p class="hero__message">is a Front End Web Developer and Media Strategist</p>
-        <!-- <div class="hero__arrow"></div> -->
+    <div class="top-nav">
+      <h1 class="logo">JMM</h1>
+      <div class="menu-btn">
+        <p class="menu-btn__text">MENU</p>
+        <div class="hamburger">
+          <div class="line line--top"></div>
+          <div class="line line--mid"></div>
+          <div class="line line--bottom"></div>
+        </div>
       </div>
     </div>
   </div>
 
 
+  <!-- Right Side Hidden Menu -->
+  <div class="section section--menu">
+    <div class="container">
+      <div class="menu">
+        <ul class="nav-list">
+          <li class="nav-list__item"><a href="./index.html" alt="" class="nav-list__item__text">HOME</a></li>
+          <li class="nav-list__item"><a href="./work.html" alt="" class="nav-list__item__text">WORK</a></li>
+          <li class="nav-list__item"><a href="" alt="" class="nav-list__item__text">ABOUT</a></li>
+          <li class="nav-list__item"><a href="" alt="" class="nav-list__item__text">CONTACT</a></li>
+          <li class="nav-list__item">
+            <span class="fa fa-github"></span>
+            <span class="fa fa-linkedin"></span>
+            <span class=""></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <!-- Hero -->
+    <div id="home" class="section section--hero">
+      <div class="container">
+        <div class="hero">
+          <h2 class="hero__name">John Michael McCasland</h2>
+          <p class="hero__message">is a Front End Web Developer <span class="hero__message__span">(and a lot of other things too!)</span></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.wrapper -->
   <script src="/app.js" charset="utf-8"></script>
 </body>
+
 </html>

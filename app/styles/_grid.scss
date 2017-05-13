@@ -1,0 +1,61 @@
+
+// GRID \\
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: $m-gutter;
+
+  &__item {
+    flex: 1 1 400px;
+    height: calc(50vh - 2rem);
+  }
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: $m-gutter;
+  z-index: 1;
+  // border: 1px solid red;
+
+  &__image {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  &__overlay {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    margin: 0;
+    // padding: $m-gutter ($m-gutter * 2) $m-gutter $m-gutter;
+    background: $c-secondary;
+    color: $c-textlight;
+    text-align: center;
+    opacity: 0;
+    content: '';
+
+    &__title {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    &__description {
+      margin: $m-gutter 0 0;
+      font-size: 1.25rem;
+    }
+
+    // &:hover {
+    //   opacity: 1;
+    // }
+  }
+}

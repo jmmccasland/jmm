@@ -9,13 +9,14 @@
     "build": "ember build",
     "lint": "sass-lint",
     "esfix": "eslint src --fix && eslint tests --fix",
-    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist my-app.surge.sh",
+    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist byjohnmichael.com",
     "setup:vue": "yarn add vue vue-router && yarn add --dev rollup-plugin-vue eslint-plugin-html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "font-awesome": "^4.6.3",
+    "jump.js": "^1.0.2",
     "normalize-css": "^2.3.1",
     "whatwg-fetch": "^2.0.2",
     "yoga-sass": "^1.0.1"

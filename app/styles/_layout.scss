@@ -1,9 +1,20 @@
 // LAYOUT \\
+.wrapper { // for pushing page down below fixed nav bar
+  position: relative;
+  top: 4rem;
+}
+
 .section {
   padding: $m-gutter;
 }
 
 .container {
+  width: 100%;
+  max-width: 75rem;
   margin: 0 auto;
-  max-width: 65rem;
+}
+
+.container--large {
+  max-width: 1500px;
+  margin: 0 auto;
 }

@@ -3,9 +3,14 @@
   position: fixed;
   width: 100%;
   padding: $m-gutter;
+  transition: box-shadow 800ms;
   background: $g-brandgradientreverse;
   box-shadow: $s-basic;
   z-index: 100;
+
+  &--open {
+    box-shadow: none;
+  }
 }
 
 .top-nav {

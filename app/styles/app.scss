@@ -22,9 +22,11 @@ $g-brandgradientinverse: linear-gradient(45deg, $c-primary, $c-secondary);
 
 // Shadows & Borders
 $b-basic: 1px solid $c-textdark;
-$s-basic: 0 1px 8px 2px rgba(0,0,0,0.24);
-$s-left: -3px 63px 5px 2px rgba(0,0,0,0.24);
-
+$s-basic: 0 5px 8px 2px rgba(0, 0, 0, 0.24);
+$s-left: -3px 63px 5px 2px rgba(0, 0, 0, 0.24);
+// $s-left-inset: inset 10px 3px 0px 10px 0 rgba(0, 0, 0, 0.24);
+// $s-basic-inset: inset 0 -5px 10px 0 rgba(0, 0, 0, 0.24);
+$s-outer: 3px -3px 25px 5px rgba(0, 0, 0, 0.24);
 
 // Measurements
 $m-gutter: 1rem;
@@ -39,7 +41,6 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Londrina Outline', cursive;
 **************************************/
-
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
@@ -56,18 +57,29 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // Components \\
 @import './components/banner'; // Banner component styles
 
+.wrapper {
+
+  width: calc(100% - 1rem);
+  height: calc(100vh - 4rem);
+  transition: box-shadow 800ms, top 800ms, right 800ms;
+  box-shadow: none;
+  z-index: 1;
+
+  &--open {
+    // top: 4.5rem;
+    // right: 0.5rem;
+    box-shadow: $s-outer;
+    z-index: 101;
+  }
+}
+
+
+
+
+
 
 ::-webkit-scrollbar {
-    display: none;
-}
-
-// FOOTER \\
-.section--footer {
-  background: $c-primary;
-}
-
-.footer {
-  text-align: center;
+  display: none;
 }
 
 

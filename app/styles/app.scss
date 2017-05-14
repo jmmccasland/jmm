@@ -57,33 +57,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // Components \\
 @import './components/banner'; // Banner component styles
 
-.wrapper {
-
-  width: calc(100% - 1rem);
-  height: calc(100vh - 4rem);
-  transition: box-shadow 800ms, top 800ms, right 800ms;
-  box-shadow: none;
-  z-index: 1;
-
-  &--open {
-    // top: 4.5rem;
-    // right: 0.5rem;
-    box-shadow: $s-outer;
-    z-index: 101;
-  }
-}
-
-
-
-
-
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-
-
 // PROJECT SPECIFIC STYLES \\
 .project-mockup {
   border-radius: 0.25rem;

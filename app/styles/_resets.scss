@@ -33,3 +33,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+::-webkit-scrollbar { // removes scroll bar on safari
+  display: none;
+}

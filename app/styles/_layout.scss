@@ -2,6 +2,16 @@
 .wrapper { // for pushing page down below fixed nav bar
   position: relative;
   top: 4rem;
+  width: calc(100% - 1rem);
+  height: calc(100vh - 4rem);
+  transition: box-shadow 800ms, top 800ms, right 800ms;
+  box-shadow: none;
+  z-index: 1;
+
+  &--open {
+    box-shadow: $s-outer;
+    z-index: 101;
+  }
 }
 
 .section {

@@ -96,7 +96,7 @@ homeBtn.addEventListener('click', () => {
   jump('.section--hero', {
     offset: -59,
     // duration: 2000,
-    // callback: () => lock(home),
+    callback: () => lock(home),
   });
   toggleMenu();
 });
@@ -106,7 +106,7 @@ workBtn.addEventListener('click', () => {
   jump('.section--work', {
     offset: -59,
     // duration: 2000,
-    // callback: () => lock(work),
+    callback: () => lock(work),
   });
   toggleMenu();
 });
@@ -116,7 +116,7 @@ aboutBtn.addEventListener('click', () => {
   jump('.section--about', {
     offset: -59,
     // duration: 2000,
-    // callback: () => lock(about),
+    callback: () => lock(about),
   });
   toggleMenu();
 });

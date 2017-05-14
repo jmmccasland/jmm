@@ -1,5 +1,5 @@
 // VARIABLES \\
-// Brand Colors
+// Brand Colors RED & GOLD MAYBE?
 $c-primary:        steelblue;
 $c-secondary:      seagreen;
 $c-accent:         linear-gradient(-25deg, $c-primary, $c-secondary);
@@ -79,14 +79,23 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
   > * + * {
     margin-top: $m-gutter * 3;
-
   }
 }
 
-
-
 // WORK - INDEX PAGE STYLES \\
 .section--work {
+  display: none;
+  width: 100%;
   height: calc(100vh - 4rem);
   padding: 0;
+  background: $c-textlight;
+}
+
+// ABOUT - INDEX STYLES
+.section--about {
+  display: none;
+  width: 100%;
+  height: calc(100vh - 4rem);
+  padding: 0;
+  background: green;
 }

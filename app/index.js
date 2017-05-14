@@ -1,5 +1,5 @@
 import 'whatwg-fetch';
-// import jump from 'jump.js';
+import jump from 'jump.js';
 
 // Is the menu open?
 let menuOpen = false;
@@ -44,5 +44,79 @@ function toggleMenu() {
 
 // Call the Toggle Function on the Menu Btn Click
 menuBtn.addEventListener('click', () => {
+  toggleMenu();
+});
+
+
+// Page Transitions \\
+// 'PAGE' Variables
+const home = document.querySelector('.section--hero');
+const work = document.querySelector('.section--work');
+const about = document.querySelector('.section--about');
+const contact = document.querySelector('.section--contact');
+
+// Link Variables
+const homeBtn = document.querySelector('.home-btn');
+const workBtn = document.querySelector('.work-btn');
+const aboutBtn = document.querySelector('.about-btn');
+const contactBtn = document.querySelector('.contact-btn');
+
+
+// Remove Page Function
+function lock(page) {
+  if (page == home) {
+    work.style.display = 'none';
+    about.style.display = 'none';
+    // contact.style.display = 'none';
+  }
+
+  if (page == work) {
+    home.style.display = 'none';
+    about.style.display = 'none';
+    // contact.style.display = 'none';
+  }
+
+  if (page == about) {
+    home.style.display = 'none';
+    work.style.display = 'none';
+    // contact.style.display = 'none';
+  }
+}
+
+// Re Add page function
+function unlock() {
+  about.style.display = 'flex';
+  work.style.display = 'flex';
+  home.style.display = 'flex';
+}
+
+homeBtn.addEventListener('click', () => {
+  // debugger;
+  unlock();
+  jump('.section--hero', {
+    offset: -59,
+    // duration: 2000,
+    // callback: () => lock(home),
+  });
+  toggleMenu();
+});
+
+workBtn.addEventListener('click', () => {
+  unlock();
+  jump('.section--work', {
+    offset: -59,
+    // duration: 2000,
+    // callback: () => lock(work),
+  });
+  toggleMenu();
+});
+
+aboutBtn.addEventListener('click', () => {
+  unlock();
+  jump('.section--about', {
+    offset: -59,
+    // duration: 2000,
+    // callback: () => lock(about),
+  });
   toggleMenu();
 });

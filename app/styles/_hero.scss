@@ -1,9 +1,6 @@
 // HERO \\
 .section--hero {
   display: flex;
-  position: fixed;
-  align-content: center;
-  // justify-content: center;
   height: calc(100vh - 4rem);
   background: $c-textlight;
 }

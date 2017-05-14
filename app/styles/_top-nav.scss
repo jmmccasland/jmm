@@ -9,6 +9,7 @@
   z-index: 100;
 
   &--open {
+    transition: box-shadow 800ms;
     box-shadow: none;
   }
 }

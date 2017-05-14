@@ -71,7 +71,7 @@ body {
 .body {
   &--open {
     position: relative;
-    right: 17rem;
+    right: 14rem;
     transition: right 800ms;
   }
 }
@@ -82,10 +82,10 @@ body {
   display: flex;
   position: fixed;
   top: 0;
-  right: -17rem;
+  right: -14rem;
   flex-direction: column;
   justify-content: space-between;
-  width: 18rem;
+  width: 15rem;
   height: 100vh;
   transition: right 800ms;
   background: $g-brandgradient;

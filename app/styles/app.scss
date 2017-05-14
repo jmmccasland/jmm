@@ -1,32 +1,24 @@
 // VARIABLES \\
-// Colors
+// Brand Colors
 $c-primary:        steelblue;
 $c-secondary:      seagreen;
 $c-accent:         linear-gradient(-25deg, $c-primary, $c-secondary);
 
-
-
-
+// Text Colors
 $c-textdark: #fefefe;
 $c-textlight: #fefefe;
 
-// PROJECT COLORS
+// Project Specific Colors
 $c-fortyten: #343435;
 $c-rockspot: #36685d;
 
 // Translucent Colors
-$t-solidwhite: rgba(255, 255, 255, 0.9);
-$t-notsolidwhite: rgba(255, 255, 255, 0.25);
-$t-clearwhite: rgba(255, 255, 255, 0.05);
 $t-clear: rgba(255, 255, 255, 0);
-$t-clearblack: SteelBlue ;
 
 // Gradients
-$g-brandgradient: #212121;
 $g-brandgradient: linear-gradient(-25deg, $c-primary, $c-secondary);
 $g-brandgradientreverse: linear-gradient(to left, $c-secondary, $c-primary);
 $g-brandgradientinverse: linear-gradient(45deg, $c-primary, $c-secondary);
-
 
 // Shadows & Borders
 $b-basic: 1px solid $c-textdark;
@@ -51,7 +43,7 @@ font-family: 'Londrina Outline', cursive;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans'); // GOOGLE fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Archivo+Black'); // GOOGLE fonts
 @import 'box-sizing'; // Really great box-sizing styles, thanks OP!
 @import 'resets'; // Default style resets to make elements play nicely with minimal effort
 @import 'layout'; // Styles for site-wide layout (wrapper, section, container, etc)

@@ -86,12 +86,13 @@
   transition: right 800ms;
   background: $g-brandgradient;
   color: $c-textlight;
-  box-shadow: $s-left;
+  box-shadow: none;
   z-index: 100;
 
   &--open {
     right: 0;
-    box-shadow: none;
+    box-shadow: $s-left;
+
   }
 }
 

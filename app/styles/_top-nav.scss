@@ -3,14 +3,14 @@
   position: fixed;
   width: 100%;
   padding: $m-gutter;
-  transition: box-shadow 800ms;
+  transition: box-shadow 2000ms;
   background: $g-brandgradientreverse;
-  box-shadow: $s-basic;
+  box-shadow: none;
   z-index: 100;
 
   &--open {
-    transition: box-shadow 800ms;
-    box-shadow: none;
+    transition: box-shadow 2000ms;
+    box-shadow: $s-basic;
   }
 }
 

@@ -57,10 +57,18 @@ const contact = document.querySelector('.section--contact');
 
 // Link Variables
 const homeBtn = document.querySelector('.home-btn');
+const logoBtn = document.querySelector('.logo-btn');
 const workBtn = document.querySelector('.work-btn');
 const aboutBtn = document.querySelector('.about-btn');
 const contactBtn = document.querySelector('.contact-btn');
 
+
+logoBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  jump('.section--hero', {
+    offset: -59,
+  });
+});
 
 homeBtn.addEventListener('click', () => {
   jump('.section--hero', {

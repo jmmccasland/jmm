@@ -8,7 +8,7 @@
 .hero {
   width: 100%;
   height: 100%;
-  color: $c-textlight;
+  color: $c-primary;
   font-weight: 100;
   text-transform: uppercase;
 
@@ -61,12 +61,27 @@
   }
 }
 
+.contact {
+  text-transform: none;
+
+  &__icon {
+    margin-right: 1rem;
+    transition: font-size 800ms;
+    font-size: 1.5rem;
+  }
+}
+
+
 @media (max-width: 600px) {
   .hero__name {
     font-size: 2.8rem;
   }
 
   .hero__message {
+    font-size: 1rem;
+  }
+
+  .icon {
     font-size: 1rem;
   }
 }

@@ -63,60 +63,72 @@ const contactBtn = document.querySelector('.contact-btn');
 
 
 // Remove Page Function
-function lock(page) {
-  if (page == home) {
-    work.style.display = 'none';
-    about.style.display = 'none';
-    // contact.style.display = 'none';
-  }
-
-  if (page == work) {
-    home.style.display = 'none';
-    about.style.display = 'none';
-    // contact.style.display = 'none';
-  }
-
-  if (page == about) {
-    home.style.display = 'none';
-    work.style.display = 'none';
-    // contact.style.display = 'none';
-  }
-}
+// function lock(page) {
+//   if (page == home) {
+//     work.style.display = 'none';
+//     about.style.display = 'none';
+//     // contact.style.display = 'none';
+//   }
+//
+//   if (page == work) {
+//     home.style.display = 'none';
+//     about.style.display = 'none';
+//     // contact.style.display = 'none';
+//   }
+//
+//   if (page == about) {
+//     home.style.display = 'none';
+//     work.style.display = 'none';
+//     // contact.style.display = 'none';
+//   }
+//   toggleMenu();
+// }
 
 // Re Add page function
-function unlock() {
-  about.style.display = 'flex';
-  work.style.display = 'flex';
-  home.style.display = 'flex';
-}
+// function unlock(page) {
+//   if (page == home) {
+//     home.style.display = 'flex';
+//     work.style.display = 'flex';
+//     about.style.display = 'flex';
+//   }
+//   if (page == work) {
+//     home.style.display = 'flex';
+//     work.style.display = 'flex';
+//     about.style.display = 'flex';
+//   }
+//   if (page == about) {
+//     home.style.display = 'flex';
+//     work.style.display = 'flex';
+//     about.style.display = 'flex';
+//   }
+// }
 
 homeBtn.addEventListener('click', () => {
   // debugger;
-  unlock();
+  // unlock(home);
   jump('.section--hero', {
     offset: -59,
     // duration: 2000,
-    callback: () => lock(home),
+    // callback: () => lock(home),
   });
-  toggleMenu();
 });
 
 workBtn.addEventListener('click', () => {
-  unlock();
+  // unlock(work);
   jump('.section--work', {
     offset: -59,
     // duration: 2000,
-    callback: () => lock(work),
+    // callback: () => lock(work),
   });
-  toggleMenu();
+  // toggleMenu();
 });
 
 aboutBtn.addEventListener('click', () => {
-  unlock();
+  // unlock(about);
   jump('.section--about', {
     offset: -59,
     // duration: 2000,
-    callback: () => lock(about),
+    // callback: () => lock(about),
   });
-  toggleMenu();
+  // toggleMenu();
 });

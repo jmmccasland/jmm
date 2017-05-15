@@ -1,5 +1,4 @@
 // VARIABLES \\
-// Brand Colors RED & GOLD MAYBE?
 $c-primary:        steelblue;
 $c-secondary:      seagreen;
 $c-accent:         linear-gradient(-25deg, $c-primary, $c-secondary);
@@ -21,17 +20,12 @@ $g-brandgradientreverse: linear-gradient(to left, $c-secondary, $c-primary);
 $g-brandgradientinverse: linear-gradient(45deg, $c-primary, $c-secondary);
 
 // Shadows & Borders
-$b-basic: 1px solid $c-textdark;
 $s-basic: 0 5px 8px 2px rgba(0, 0, 0, 0.24);
 $s-left: -3px 63px 5px 2px rgba(0, 0, 0, 0.24);
-// $s-left-inset: inset 10px 3px 0px 10px 0 rgba(0, 0, 0, 0.24);
-// $s-basic-inset: inset 0 -5px 10px 0 rgba(0, 0, 0, 0.24);
 $s-outer: 3px -3px 25px 5px rgba(0, 0, 0, 0.24);
 
 // Measurements
 $m-gutter: 1rem;
-
-
 
 // IMPORTS \\
 /**************************************
@@ -84,7 +78,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 // WORK - INDEX PAGE STYLES \\
 .section--work {
-  display: none;
   width: 100%;
   height: calc(100vh - 4rem);
   padding: 0;
@@ -93,7 +86,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 // ABOUT - INDEX STYLES
 .section--about {
-  display: none;
   width: 100%;
   height: calc(100vh - 4rem);
   padding: 0;

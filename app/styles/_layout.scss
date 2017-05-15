@@ -3,15 +3,7 @@
   position: relative;
   top: 4rem;
   width: calc(100% - 1rem);
-  transition: box-shadow 800ms, z-index 8000ms;
   box-shadow: none;
-  z-index: 1;
-
-  &--open {
-    transition: box-shadow 800ms;
-    box-shadow: $s-outer;
-    z-index: 99;
-  }
 }
 
 .section {

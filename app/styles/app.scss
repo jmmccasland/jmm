@@ -20,9 +20,9 @@ $g-brandgradientreverse: linear-gradient(to left, $c-secondary, $c-primary);
 $g-brandgradientinverse: linear-gradient(45deg, $c-primary, $c-secondary);
 
 // Shadows & Borders
-$s-basic: 0 5px 8px 2px rgba(0, 0, 0, 0.24);
+$s-basic: 0 5px 5px 2px rgba(0, 0, 0, 0.24);
 $s-left: -3px 63px 5px 2px rgba(0, 0, 0, 0.24);
-$s-outer: 3px -3px 25px 5px rgba(0, 0, 0, 0.24);
+// $s-outer: 3px -3px 25px 5px rgba(0, 0, 0, 0.24);
 
 // Measurements
 $m-gutter: 1rem;
@@ -50,6 +50,20 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 // Components \\
 @import './components/banner'; // Banner component styles
+
+.gradient-text {
+  background: $g-brandgradientreverse;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.section__title {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2rem;
+}
+
 
 // PROJECT SPECIFIC STYLES \\
 .project-mockup {
@@ -79,7 +93,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // WORK - INDEX PAGE STYLES \\
 .section--work {
   width: 100%;
-  height: calc(100vh - 4rem);
+  // height: calc(100vh - 4rem);
   padding: 0;
   background: $c-textlight;
 }
@@ -88,5 +102,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .section--about {
   width: 100%;
   height: calc(100vh - 4rem);
-  padding: 0;
+}
+
+.banner__top--about {
+  padding-top: 0;
 }

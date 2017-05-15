@@ -8,6 +8,7 @@
   }
 
   &__description {
+    margin-top: 0;
     font-size: 1.125rem;
     font-weight: 100;
     letter-spacing: 1px;
@@ -24,7 +25,7 @@
 
 .tech-list {
   display: flex;
-  flex-basis: 40%;
+  // flex-basis: 40%;
   flex-wrap: wrap;
   align-items: center;
 
@@ -39,6 +40,7 @@
   }
 
   &__title {
+    margin-top: 0;
     font-size: 1.125rem;
   }
 }

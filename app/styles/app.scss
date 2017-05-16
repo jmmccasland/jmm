@@ -94,9 +94,26 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // ABOUT - INDEX STYLES
 .section--about {
   width: 100%;
-  height: calc(100vh - 4rem);
+  min-height: calc(100vh - 4rem);
 }
 
 .banner__top--about {
   padding-top: 0;
+}
+
+// CONTACT - INDEX STYLES
+.section--contact {
+  width: 100%;
+  height: calc(100vh - 4rem);
+}
+
+.contact {
+  color: $c-primary;
+  text-transform: none;
+
+  &__icon {
+    margin-right: 1rem;
+    transition: font-size 800ms;
+    font-size: 1.5rem;
+  }
 }

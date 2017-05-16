@@ -90,3 +90,10 @@ aboutBtn.addEventListener('click', () => {
     callback: () => toggleMenu(),
   });
 });
+
+contactBtn.addEventListener('click', () => {
+  jump('.section--contact', {
+    offset: -59,
+    callback: () => toggleMenu(),
+  });
+});

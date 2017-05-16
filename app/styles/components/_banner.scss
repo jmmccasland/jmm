@@ -1,8 +1,7 @@
-
 // Banner Component Styles \\
 .detail {
   &__title {
-    margin-bottom: $m-gutter * 2;
+    margin: ($m-gutter * 2) 0;
     font-size: 3rem;
     line-height: 3rem;
   }
@@ -19,13 +18,12 @@
 .partner {
   display: inline-block;
   padding: 0.25rem 0.5rem;
-  // background: darken($c-accent, 10%);
-  background: $c-accent;
+  background: $c-primary;
+  color: $c-textlight;
 }
 
 .tech-list {
   display: flex;
-  // flex-basis: 40%;
   flex-wrap: wrap;
   align-items: center;
 
@@ -58,8 +56,8 @@
     flex-shrink: 1;
     padding: $m-gutter;
     border-radius: 0.25rem;
-    // background: darken($c-accent, 10%);
-    background: $c-accent;
+    background: $c-primary;
+    color: $c-textlight;
     font-size: 1.125rem;
     text-align: center;
   }

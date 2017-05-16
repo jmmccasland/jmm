@@ -1,6 +1,6 @@
 // Banner Layout Styles \\
 .section--banner {
-  // background: $c-accent;
+  background: #f0f0f0;
   color: $c-primary;
 }
 
@@ -11,9 +11,9 @@
 
   &__top {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    padding: 2.5rem 0;
+    padding: 0 0 2rem;
 
     > * {
       flex-grow: 1;

@@ -67,15 +67,9 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 // PROJECT SPECIFIC STYLES \\
 .project-mockup {
+  border: 2.5px solid #444;
   border-radius: 0.25rem;
 
-  &--fortyten {
-    border: 5px solid $c-fortyten;
-  }
-
-  &--rockspot {
-    border: 5px solid $c-rockspot;
-  }
 }
 
 

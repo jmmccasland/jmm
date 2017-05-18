@@ -98,14 +98,14 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 }
 
 .banner__top--about {
-  padding-top: 0;
+  padding: 0;
 }
 
 // CONTACT - INDEX STYLES
-.section--contact {
-  width: 100%;
-  height: calc(100vh - 4rem);
-}
+// .section--contact {
+//   width: 100%;
+//   height: calc(100vh - 4rem);
+// }
 
 .contact {
   color: $c-primary;

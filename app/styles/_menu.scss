@@ -9,7 +9,6 @@
 
   &__text {
     margin: 0 1rem 0 0;
-
   }
 }
 
@@ -108,6 +107,7 @@
       position: relative;
       font-size: 1.75rem;
       line-height: 1.75rem;
+      cursor: pointer;
 
       &::after {
         display: block;
@@ -130,7 +130,7 @@
       }
     }
 
-    > .fa {
+    > * > .fa {
       font-size: 2.5rem;
     }
 
